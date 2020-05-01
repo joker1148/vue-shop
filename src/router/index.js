@@ -21,7 +21,7 @@ Vue.use(VueRouter)
     component: Home,
     redirect:"/index",
     children:[
-      {
+      { 
         path:"/index",
         name:"index",
         component:Index
