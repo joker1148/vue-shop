@@ -15,7 +15,7 @@ import Alipay from '../views/alipay.vue'
 Vue.use(VueRouter)
  
   const routes = [
-  {
+  { 
     path: '/',
     name: 'Home',
     component: Home,
