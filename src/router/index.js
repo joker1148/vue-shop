@@ -20,7 +20,7 @@ Vue.use(VueRouter)
     name: 'Home',
     component: Home,
     redirect:"/index",
-    children:[
+    children:[ 
       { 
         path:"/index",
         name:"index",
