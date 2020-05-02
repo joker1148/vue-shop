@@ -6,9 +6,12 @@
 
 
 <script>
-
+import storage from './stroage/index.js'
 export default {
   mounted(){
+    // storage.setItem("a",{a:1})
+    storage.clear("a")
+
     let url = "/api/common/adver-getadver"
     // this.$http.get(url).then((res)=>{
     //   console.log(res)
