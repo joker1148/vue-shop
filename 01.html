@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .heart {
+    width: 500px;
+    height: 500px;
+    transform: rotateZ(45deg);
+    background: red;
+    position: absolute;
+    left:50%;
+    top: 50%;
+}
+
+.heart::after,
+.heart::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius:15%;
+    display: block;
+    background: red;
+    position: absolute;
+    top: -50%;
+    left: 0;
+}
+
+.heart::before {
+    top: 0;
+    left: -50%;
+}
+
+
+
+</style>
+<body>
+    <div class="heart"></div>11
+</body>
+</html>
