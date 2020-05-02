@@ -19,7 +19,7 @@ export default {
             if(val){
                 return val[key]
             }
-        }
+        } 
         return this.getStorage()[key]
     },
     getStorage(){
