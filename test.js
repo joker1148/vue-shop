@@ -8,3 +8,5 @@ const p1 = new Promise((resolve,reject)=>{
 p1.then((res)=>{
     console.log(res);
 })
+
+console.log(typeof null)
