@@ -8,16 +8,27 @@
 <script>
 import storage from './stroage/index.js'
 export default {
+  data(){
+    return {
+      res:""
+    }
+  },
   mounted(){
     // storage.setItem("a",{a:1})
     storage.clear("a")
 
-    let url = "/api/common/adver-getadver"
-    // this.$http.get(url).then((res)=>{
+    // let url = "/api/common/adver-getadver"
+    // // this.$http.get(url).then((res)=>{
+    // //   console.log(res)
+    // // })
+    // this.$jsonp(url,(err,res)=>{
     //   console.log(res)
     // })
-    this.$jsonp(url,(err,res)=>{
+
+    //本地集成mock.js实现数据mock
+    this.$http.get("/user/login").then((res)=>{
       console.log(res)
+      this.res = res
     })
   }  
 }

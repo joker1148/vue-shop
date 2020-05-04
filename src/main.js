@@ -4,8 +4,14 @@ import router from './router'
 import store from './store'
 import axios from "axios"
 import jsonp from 'jsonp'
-import env from './env'
+// import env from './env'
 
+
+//mock开关
+const mock = true
+if(mock){
+  require("./mock/api.js")
+}
 
 //根据前端跨域方式调整
 axios.defaults.baseURL = '/api'
@@ -13,7 +19,7 @@ axios.defaults.timeout = 8000
 
 
 //根据环境变量获取不同的地址
-axios.defaults.baseURL = env.baseURL
+// axios.defaults.baseURL = env.baseURL
 
 //错误拦截
 axios.interceptors.response.use(function(response){
