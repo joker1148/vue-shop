@@ -1,43 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<style>
-    .heart {
-    width: 500px;
-    height: 500px;
-    transform: rotateZ(45deg);
-    background: red;
-    position: absolute;
-    left:50%;
-    top: 50%;
-}
+    <style>
+      #SomeElementYouWantToAnimate {
+        height: 200px;
+        width: 200px;
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="SomeElementYouWantToAnimate"></div>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <h1>111</h1>
+    <script>
+       var throttle = function (func, delay) {
+            var prev = Date.now();
+            return function () {
+                var context = this;
+                var args = arguments;
+                var now = Date.now();
+                if (now - prev >= delay) {
+                    func.apply(context, args);
+                    prev = Date.now();
+                }
+            }
+        }
 
-.heart::after,
-.heart::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-radius:15%;
-    display: block;
-    background: red;
-    position: absolute;
-    top: -50%;
-    left: 0;
-}
-
-.heart::before {
-    top: 0;
-    left: -50%;
-}
+        function handle() {
+            console.log(Math.random());
+        }
+        window.addEventListener('scroll', throttle(handle, 1000));
 
 
-
-</style>
-<body>
-    <div class="heart"></div>11
-</body>
+    </script>
+  </body>
 </html>

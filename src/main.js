@@ -8,14 +8,14 @@ import jsonp from 'jsonp'
 
 
 //mock开关
-const mock = true
+const mock = false
 if(mock){
   require("./mock/api.js")
 }
 
 //根据前端跨域方式调整
 axios.defaults.baseURL = '/api'
-axios.defaults.timeout = 8000
+axios.defaults.timeout = 2000
 
 
 //根据环境变量获取不同的地址

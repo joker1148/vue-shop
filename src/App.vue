@@ -25,34 +25,15 @@ export default {
     //   console.log(res)
     // })
 
-    //本地集成mock.js实现数据mock
-    this.$http.get("/user/login").then((res)=>{
-      console.log(res)
-      this.res = res
-    })
+    // //本地集成mock.js实现数据mock
+    // this.$http.get("/user/login").then((res)=>{
+    //   console.log(res)
+    //   this.res = res
+    // })
   }  
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+@import './assets/scss/reset.scss';
 </style>
