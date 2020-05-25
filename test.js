@@ -56,3 +56,5 @@ console.log(a)
 var b = new B()
 class B {}
 console.log(a)
+
+const a = 0
